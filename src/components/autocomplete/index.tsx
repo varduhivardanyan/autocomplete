@@ -49,7 +49,7 @@ const AutocompleteBlock: React.FC<AutocompleteProps> = ({
       {error && (
         <div className={`${isLoading ? 'isLoading' : ''} errorBlock`}>
           <span>{error}</span>
-          <button onClick={fetchOptions}>Click to retry data loading</button>
+          <button onClick={() => fetchOptions()}>Click to retry data loading</button>
         </div>
       )}
       {noResult && (
