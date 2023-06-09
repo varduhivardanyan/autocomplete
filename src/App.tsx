@@ -28,7 +28,7 @@ function App() {
 
 	// can be used for redirecting to corresponding search result page
 	const onItemClick = useCallback((item: TOption) => {
-		console.log(`clicked ${item}`);
+		console.log(`clicked ${item.label}`);
 	}, []);
 
 	const fetchOptions = async () => {
